@@ -1,0 +1,101 @@
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["uname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+<body background="BC7.jpg">
+
+
+<p style="text-align:center"><font color="black" size="7" face="timesnewroman"><b><i>
+"Don't be excessively concerned about your DISEASE;<br>-that itself is SICKNESS"</i></b></font></p>
+
+<marquee><font color="yellow" size="5" face="timesnewroman">"To login into the page,enter your user_name and password;"</font></marquee>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+<center>
+form {border: 3px}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+ margin: 8px 0;
+  display: inline-block;
+
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+div {
+  background-color: lightgrey;
+  image url:"login.jpg";
+  opacity:0.5;
+  align:center;
+  width: 700px;
+  height:500px;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+   
+     float: none;
+}
+  
+}
+
+</style>
+</head>
+<body>
+
+
+
+<form action="login.php" method="POST" >
+  
+<center>
+  <div class="container" align="center">
+    <h1 style="text-align:center"><font face="timesnewroman">Login</h1> 
+    <input type="text" placeholder="Enter Username" name="uname"><br>
+
+  
+    <input type="password" placeholder="Enter Password" name="psw"><br>
+        
+    <button type="submit" width="100%">Login</button><br>
+
+    
+  </div>
+</center>
+
+
+</form>
+</center>
+</body>
+</html>
